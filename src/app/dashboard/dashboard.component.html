@@ -1,0 +1,12 @@
+<p>
+  dashboard works!
+</p>
+
+<a routerLink="/dashboard/products">Products</a>
+<a routerLink="/dashboard/product/2">Product Details</a>
+<div>
+  <input type="text" [(ngModel)]="productId" placeholder="Enter product id">
+  <button (click)="showProductDetails()">Product details</button>
+</div>
+
+<router-outlet></router-outlet>
